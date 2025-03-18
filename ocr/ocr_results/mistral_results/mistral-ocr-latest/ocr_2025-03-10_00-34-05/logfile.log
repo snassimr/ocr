@@ -1,0 +1,4 @@
+2025-03-10 00:34:05,896 ################################ Running mistral-ocr-latest Model on OCR Prompt ################################
+
+2025-03-10 00:36:05,827 model results of m-z-0194c27c-aebe-75d0-812f-06fbeb60b7d6 saved to ocr_results/mistral_results/mistral-ocr-latest/ocr_2025-03-10_00-34-05/m-z-0194c27c-aebe-75d0-812f-06fbeb60b7d6_output.json
+2025-03-10 00:36:06,053 results evaluations of m-z-0194c27c-aebe-75d0-812f-06fbeb60b7d6 saved to ocr_results/mistral_results/mistral-ocr-latest/ocr_2025-03-10_00-34-05/evaluations/m-z-0194c27c-aebe-75d0-812f-06fbeb60b7d6.json

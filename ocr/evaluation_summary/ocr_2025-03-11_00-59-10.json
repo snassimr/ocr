@@ -1,0 +1,1 @@
+[{"model": "gemini-2.0-flash", "total_vids": 1, "total_frames": 49, "avg_cer": 0.11598623918883116, "avg_wer": 0.19209670400146603, "avg_acc": 88.40137608111691, "avg_order_agnostic_acc": 95.19930277568903}]

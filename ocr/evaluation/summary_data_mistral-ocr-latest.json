@@ -1,0 +1,10 @@
+{
+    "model": "mistral-ocr-latest",
+    "total_vids": 5,
+    "total_frames": 211,
+    "avg_cer": 1.4772,
+    "avg_wer": 1.9754,
+    "avg_acc": -47.72,
+    "avg_order_agnostic_acc": 72.71,
+    "avg_processing_time": 2.051
+}

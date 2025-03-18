@@ -1,0 +1,1 @@
+[{"model": "mistral-ocr-latest", "total_vids": 1, "total_frames": 38, "avg_cer": 6.087237165720345, "avg_wer": 8.48913397552236, "avg_acc": -508.7237165720347, "avg_order_agnostic_acc": 74.740439529364}]
