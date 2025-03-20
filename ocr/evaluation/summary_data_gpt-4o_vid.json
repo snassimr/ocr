@@ -28,5 +28,35 @@
         "avg_acc": 72.87,
         "avg_order_agnostic_acc": 74.34,
         "avg_processing_time": 2.726
+    },
+    {
+        "model": "gpt-4o",
+        "vid": "m-z-0194c27c-aebe-75d0-812f-06fbeb60b7d6",
+        "total_frames": 36,
+        "avg_cer": 0.4724,
+        "avg_wer": 0.6441,
+        "avg_acc": 52.76,
+        "avg_order_agnostic_acc": 72.73,
+        "avg_processing_time": 3.279
+    },
+    {
+        "model": "gpt-4o",
+        "vid": "m-z-0194c27c-d107-7030-b990-0b5cc62f514a",
+        "total_frames": 29,
+        "avg_cer": 0.4223,
+        "avg_wer": 0.4637,
+        "avg_acc": 57.77,
+        "avg_order_agnostic_acc": 86.87,
+        "avg_processing_time": 2.869
+    },
+    {
+        "model": "gpt-4o",
+        "vid": "m-z-0194c27c-f30c-7803-b2ca-8f1026c940a2",
+        "total_frames": 32,
+        "avg_cer": 0.4434,
+        "avg_wer": 0.5716,
+        "avg_acc": 55.66,
+        "avg_order_agnostic_acc": 89.02,
+        "avg_processing_time": 5.707
     }
 ]

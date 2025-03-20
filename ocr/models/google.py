@@ -90,6 +90,8 @@ class Gemini2(BaseModel):
             cleaned_out_text = self.clean_ocr_text(out_text)
 
             processing_time = end_time - start_time
+
+            time.sleep(2)
         
             return processing_time, cleaned_out_text
         

@@ -1,0 +1,62 @@
+[
+    {
+        "model": "gemini-2.0-flash",
+        "vid": "m-z-0194c270-bbfb-7dd2-aaec-62d909b97b32",
+        "total_frames": 49,
+        "avg_cer": 0.116,
+        "avg_wer": 0.1921,
+        "avg_acc": 88.4,
+        "avg_order_agnostic_acc": 95.2,
+        "avg_processing_time": 1.335
+    },
+    {
+        "model": "gemini-2.0-flash",
+        "vid": "m-z-0194c272-dd5c-7a62-8d86-a47e3c4e4670",
+        "total_frames": 59,
+        "avg_cer": 0.1064,
+        "avg_wer": 0.1591,
+        "avg_acc": 89.36,
+        "avg_order_agnostic_acc": 95.48,
+        "avg_processing_time": 1.817
+    },
+    {
+        "model": "gemini-2.0-flash",
+        "vid": "m-z-0194c27c-894f-7e11-beac-6da09861f796",
+        "total_frames": 38,
+        "avg_cer": 0.1324,
+        "avg_wer": 0.2344,
+        "avg_acc": 86.76,
+        "avg_order_agnostic_acc": 87.95,
+        "avg_processing_time": 1.368
+    },
+    {
+        "model": "gemini-2.0-flash",
+        "vid": "m-z-0194c27c-aebe-75d0-812f-06fbeb60b7d6",
+        "total_frames": 36,
+        "avg_cer": 0.5348,
+        "avg_wer": 0.6828,
+        "avg_acc": 46.52,
+        "avg_order_agnostic_acc": 80.68,
+        "avg_processing_time": 1.702
+    },
+    {
+        "model": "gemini-2.0-flash",
+        "vid": "m-z-0194c27c-d107-7030-b990-0b5cc62f514a",
+        "total_frames": 29,
+        "avg_cer": 0.4195,
+        "avg_wer": 0.5056,
+        "avg_acc": 58.05,
+        "avg_order_agnostic_acc": 93.75,
+        "avg_processing_time": 1.509
+    },
+    {
+        "model": "gemini-2.0-flash",
+        "vid": "m-z-0194c27c-f30c-7803-b2ca-8f1026c940a2",
+        "total_frames": 32,
+        "avg_cer": 0.5906,
+        "avg_wer": 0.642,
+        "avg_acc": 40.94,
+        "avg_order_agnostic_acc": 97.23,
+        "avg_processing_time": 1.99
+    }
+]

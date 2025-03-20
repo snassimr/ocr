@@ -1,0 +1,10 @@
+{
+    "model": "gemini-2.0-flash",
+    "total_vids": 6,
+    "total_frames": 243,
+    "avg_cer": 0.277,
+    "avg_wer": 0.3601,
+    "avg_acc": 72.3,
+    "avg_order_agnostic_acc": 92.08,
+    "avg_processing_time": 1.619
+}

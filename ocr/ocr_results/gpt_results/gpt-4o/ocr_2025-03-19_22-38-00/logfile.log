@@ -1,0 +1,4 @@
+2025-03-19 22:38:01,612 ################################ Running gpt-4o Model on OCR Prompt ################################
+
+2025-03-19 22:40:17,547 model results of m-z-0194c27d-b22a-7982-a796-e332a82d5596 saved to ocr_results/gpt_results/gpt-4o/ocr_2025-03-19_22-38-00/m-z-0194c27d-b22a-7982-a796-e332a82d5596_output.json
+2025-03-19 22:40:18,092 results evaluations of m-z-0194c27d-b22a-7982-a796-e332a82d5596 saved to ocr_results/gpt_results/gpt-4o/ocr_2025-03-19_22-38-00/evaluations/m-z-0194c27d-b22a-7982-a796-e332a82d5596.json

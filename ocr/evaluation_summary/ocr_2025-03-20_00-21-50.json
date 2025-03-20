@@ -1,0 +1,1 @@
+[{"model": "gpt-4o", "total_vids": 1, "total_frames": 34, "avg_cer": 0.4314152930360134, "avg_wer": 0.5122499219884726, "avg_acc": 56.858470696398676, "avg_order_agnostic_acc": 72.01235480487438}]
