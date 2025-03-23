@@ -165,3 +165,78 @@ def plot_evaluation_heatmap_2(evaluation_summary_path, model_ids):
     plt.tight_layout(pad=2.0, h_pad=2.0, w_pad=2.0)
     plt.show();
 
+import json
+import os
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+import numpy as np
+import matplotlib.ticker as ticker
+
+def plot_evaluation_boxplot(evaluation_summary_path, model_ids):
+    # Define the metrics and their preferences
+    metrics = {
+        'avg_acc': 'higher',  # Higher accuracy is better
+        'avg_cer': 'lower',   # Lower Character Error Rate (CER) is better
+        'avg_wer': 'lower',   # Lower Word Error Rate (WER) is better
+        'avg_order_agnostic_acc': 'higher',  # Higher order-agnostic accuracy is better
+        'avg_processing_time': 'lower'  # Lower processing time is better
+    }
+    
+    # Read all JSON files into a list of DataFrames
+    dfs = []
+    for model_id in model_ids:
+        file_path = os.path.join(evaluation_summary_path, f"summary_data_{model_id}_vid.json")
+        with open(file_path, 'r') as f:
+            data = json.load(f)
+            df = pd.DataFrame(data)
+            df['model'] = model_id  # Track model in DataFrame
+            df = df[['model', 'vid'] + list(metrics.keys())]
+            dfs.append(df)
+    
+    # Concatenate DataFrames
+    combined_df = pd.concat(dfs, ignore_index=True)
+    
+    # Reshape data for boxplot format
+    melted_df = combined_df.melt(id_vars=['model', 'vid'], value_vars=metrics.keys(), 
+                                 var_name='metric', value_name='value')
+    
+    # Define custom colors for the models
+    if len(model_ids) >= 2:
+        model_palette = {model_ids[0]: 'red', model_ids[1]: 'blue'}
+    else:
+        raise ValueError("Please provide at least two model IDs.")
+    
+    # Create boxplots for each metric
+    num_metrics = len(metrics)
+    fig, axes = plt.subplots(num_metrics, 1, figsize=(10, 2 * num_metrics), sharex=True)
+    
+    # Ensure axes is iterable
+    if not isinstance(axes, (list, np.ndarray)):
+        axes = [axes]
+    
+    for ax, (metric, preference) in zip(axes, metrics.items()):
+        sns.boxplot(x='model', y='value', hue='model', data=melted_df[melted_df['metric'] == metric], 
+                    ax=ax, palette=model_palette, dodge=False)
+        
+        # Determine the appropriate emoji
+        if preference == 'higher':
+            emoji = "\u2191"
+        else:
+            emoji = "\u2193"
+        
+        # Set the title with the emoji
+        ax.set_title(f'Comparison of {metric} {emoji}')
+        ax.set_xlabel('Model')
+        ax.set_ylabel(metric)
+       
+        # Increase the frequency of y-axis ticks
+        y_min, y_max = ax.get_ylim()
+        y_ticks = np.linspace(y_min, y_max, num=11)  # Adjust 'num' for desired tick frequency
+        ax.yaxis.set_major_locator(ticker.FixedLocator(y_ticks))
+        
+        # Set y-axis tick labels to one decimal place
+        ax.yaxis.set_major_formatter(ticker.FormatStrFormatter('%.1f'))
+    
+    plt.tight_layout()
+    plt.show()

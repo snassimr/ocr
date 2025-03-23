@@ -1,0 +1,4 @@
+2025-03-21 02:04:13,055 ################################ Running gemini-2.0-flash Model on OCR Prompt ################################
+
+2025-03-21 02:23:20,719 model results of m-z-0194c27e-408d-73b1-b550-5bf76fb0339d saved to ocr_results/gemini_results/gemini-2.0-flash/ocr_2025-03-21_02-04-11/m-z-0194c27e-408d-73b1-b550-5bf76fb0339d_output.json
+2025-03-21 02:23:21,249 results evaluations of m-z-0194c27e-408d-73b1-b550-5bf76fb0339d saved to ocr_results/gemini_results/gemini-2.0-flash/ocr_2025-03-21_02-04-11/evaluations/m-z-0194c27e-408d-73b1-b550-5bf76fb0339d.json
